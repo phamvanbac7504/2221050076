@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2{
+            color: pink;
+            background-color: black
+        } 
+        .khoi-1{
+            background-color: blue;
+        }
+   
+        .khoi-2{
+            background-color: red;
+        /* 1nếu truyền một giá trị vào marfin thĩe cách xung quanh bằng giá trị đó ,*/
+        /* 2giá trị : giá trị đầu (trên dưới),giá trị 2 (trái phải) */
+            margin: 10px 50px 100px 200px;
+        }
+        /* 1truyền giá trị vào padding cho to nhỏ */
+        .khoi-3{
+            background-color: yellow; 
+            padding: 10px 50px 100px 200px;
+    }
+        /* display flex 
+             justify-content : flex end  dùng để di chuyển con ếch lên trên lá 
+             justify-content: center di chuyển hai con ếch vào giữa hai lá 
+             justify-content: space-between di chuyển 2 con ếch vào 3 lá 
+             justify-content: space-around vị trí ba con ếch cách đều nhau  
+             align-items: flex-start  dùng để di chuyển các con ếch theo chiều dọc lên trên  
+             align-items: center  dùng để di chuyển các con ếch vào giữa theo chiều dọc 
+             align-items: flex-end  dùng để di chuyển các con ếch theo chiều dọc xuống dưới
+             align-items: stretch  dùng để kéo dài các con ếch theo chiều dọc
+             align-items: baseline  dùng để các con ếch theo chiều dọc xuống dưới theo đường cơ sở
+             */
+    </style> 
+    
+</head>
+<body>
+    <!--  Nếu là id sử dụng # + tên id  -->
+    <!-- ví dụ: #tieude1-->
+    <h1 id="tieude1"> web 5 </h1>
+    <!--  Nếu là class sử dụng . + tên class  -->
+    <!-- ví dụ: .tieude2-->
+    <h2 class="tieude2"> web 6 </h2>
+    <div > web 4 </div>
+    <div class="web4"> web 4 </div>
+    <div class="khoi-1">  khối 1</div>
+    <div class="khoi-2">  khối 2</div>
+    <div class="khoi-3">  khối 3</div>
+</body>
+</html>

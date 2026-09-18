@@ -1,0 +1,92 @@
+body{
+    background-color: #1c1b20;
+    color: white;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    background-color: black;
+}
+.danh-sach-muc{
+    list-style:none;
+    display:flex;
+    gap: 30px; 
+    padding: 0;
+}
+.lien-ket-muc{
+    text-decoration:none;
+    color: #bcbbbf;
+    border-radius: 10px;
+}
+.dang-chon{
+    background-color: #4C4b51;
+    color: white;
+}
+.muc{
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.logo{
+    width: 5%
+}
+.avata{
+    width: 30px;
+    border-radius: 10px;
+}
+.lien-ket-muc:hover{
+    background-color:grey;
+}
+.banner{
+    width: 90%;
+    /*height: 70vh;
+    background-color: red;*/
+    margin: 20px auto;
+}
+.banner-img{
+    width: 90%;
+    border-radius: 20px;
+}
+.the-loai{
+    width: 90%;
+    height: 20vh;
+    margin: 10px auto;
+}
+
+.danh-sach-phim{
+    display: flex;
+    justify-content: space-between;
+}
+
+.phim{
+    width: 19%;
+    height: 20vh;
+    
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+footer{
+    width: 90%;
+    background-color:#bcbbbf;
+    margin: 20px;
+}
+.khoi-chan{
+    width: 100%;
+}
+.danh-sach-nhan-vat{
+    display: flex;
+    justify-content: space-between;
+}
+.nhan-vat{
+    width: 19%;
+    height: 20vh;
+
+    img{
+        width: 73%;
+        border-radius: 80%; 
+    }
+}

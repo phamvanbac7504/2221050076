@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7-JS</title>
+</head>
+<body>
+    <!-- Interactive JavaScript -->
+     <script>
+        //  có thể thêm mã nguồn ào trong JS 
+        //lưu ý : html phải đặt trong cặp " "
+        document.write("Hello <br> World");
+        
+        var tenSinhVien = "VANBAC";
+        var tuoi = 22;
+        document.writeln(tenSinhVien + " <br> " + tuoi);
+        document.writeln(tuoi);
+
+        var soThunhat = 10;
+        var soThuHai = 5;
+        // + - * /
+        //% chia lấy dư
+        var ketQua = soThunhat + soThuHai;
+        document.writeln("<br> kết quả là  " + ketQua);
+
+        //++ --
+        document.writeln(++soThunhat); 
+        document.writeln(--soThunhat);
+
+        //+= -= *= /= %=
+        //tương đương: soThunhat = soThunhat + soThuHai;
+        soThunhat += soThuHai;
+        document.writeln(soThunhat);
+
+        // kiểu  dữ liệu 
+        // String
+        // Number
+        // boolean : true / false
+
+        var a = "10";
+        var b = "5.5";
+        // chuyển string sang number: dùng parseInt() hoặc 
+        // parseFloat() dùng cho số lẻ ở đuôi
+        var tong = parseInt(a) + parseFloat(b);
+        document.writeln(tong);
+
+    //String 
+        document.writeln("<br>");
+        //kiểm tra chiều dài của chuỗi
+        document.writeln(tenSinhVien.length);
+
+        // nối chuỗi : dùng dấu + 
+
+        //kiểm tra tồn tại
+        //indexOf tìm vị trí xuất hiện đầu tiên (có - vị trí / không có -1 )
+        document.writeln(tenSinhVien.indexOf("A")); // trả về vị trí của chuỗi cần tìm
+
+        //includes kiểm tra xem từ có trong chuỗi  hay không (có = true / không = false)
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.includes("A")); 
+
+        //replace thay thế chuỗi cũ bằng chuỗi mới
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.replace("VAN", "ANH"));
+
+        //kiểm tra ký tự bắt đầu
+        //startwith : trả lời bằng true / false
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.startsWith("BAC"));
+
+        //viết in hoa: toUpperCase()
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.toUpperCase());
+
+        //viết in thường: toLowerCase()
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.toLowerCase());
+
+    //number
+        //kiểm tra dữ liệu có phải là số hay không : isNaN() true/false
+        // var a = "10";
+        var so = 20;
+        document.writeln("<br>");
+        document.writeln(isNaN(so)); 
+
+        //date 
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.writeln(homNay);
+
+        // khai báo ngày cụ thể tháng-ngày-năm
+        var ngay = new Date("10-20-2026");
+        document.writeln("<br>");
+        document.writeln(ngay);
+
+        // lấy năm
+        var nam = homNay.getFullYear();
+        document.writeln("<br>");
+        document.writeln(nam);
+
+        // lấy tháng
+        var thang = homNay.getMonth() + 1;
+        document.writeln("<br>");
+        document.writeln(thang);
+
+        // lấy ngày
+        var ngay = homNay.getDate();
+        document.writeln("<br>");
+        document.writeln(ngay);
+
+        // lấy thứ
+        var thu = homNay.getDay();
+        document.writeln("<br>");
+        document.writeln(thu);
+
+        var namSinhBac = nam - tuoi;
+        document.writeln("<br>");
+        document.writeln("Bắc sinh năm: " + namSinhBac);
+
+        //Mảng(array)
+        var mangSo = [1, 2, 3, 4, 5];
+        var mangTen =["VAN", "BAC", "ANH"];
+        var thongTin =["VAN", 22, false];
+
+        document.writeln("<br>");
+        document.writeln(mangSo[2]);
+
+        document.writeln("<br>");
+        document.writeln(mangTen[1]);
+
+        document.writeln("<br>");
+        document.writeln(thongTin[0]);
+
+        //kiểm tra chiều dài mảng: length
+        document.writeln("<br>");
+        document.writeln(mangSo.length);
+
+        var mang = mangSo.concat(mangTen, thongTin);
+        document.writeln("<br>");
+        document.writeln(mang);
+
+        // join : nối các phần tử của mảng thành chuỗi
+        document.writeln("<br>");
+        document.writeln(mangSo.join(" - "));
+
+        //pop lấy ra số cuối cùng
+        document.writeln("<br>");
+        document.writeln(mangSo.pop());
+
+        //push thêm phần tử vào cuối mảng
+        document.writeln("<br>");
+        mangSo.push(6);
+        document.writeln(mangSo);
+
+        //reverse đảo ngược mảng
+        document.writeln("<br>");
+        document.writeln(mangSo.reverse());
+
+
+        //var soThunhat = 10;
+        //var soThuHai = 5;
+        //== so sánh =
+        //!= khác nhau
+        //> > < >= <= so sánh lớn bé , lớn hơn bằng , nhỏ hơn bằng
+        document.writeln("<br>");
+        document.writeln(soThunhat);
+        document.writeln(soThunhat == soThuHai);
+
+        //var soThunhat = 10;
+        //var soThuHai = 5;
+        var c = "10";
+        var d= "5.5";
+        // && ||
+        // true && true = true
+        // true && false = false
+        // false && false = false
+        document.writeln("<br>");
+        document.writeln(soThunhat > soThuHai)&&(c>d);
+
+        // true || false = true
+        document.writeln("<br>");
+        document.writeln(soThunhat > soThuHai)||(c<d);
+
+        //var thu = homNay.getDay();
+        document.writeln(thu);
+        if(thu ==7) {
+            document.writeln("<br> Hôm nay là thứ 5");
+        } else if(thu ==6) {
+            document.writeln("<br> Hôm nay là thứ 6");
+        } else {
+            document.writeln("<br> Hôm nay không phải là thứ 5 hoặc thứ 6");
+        }
+
+        //0->4 F
+        //4->5 D
+        //7->8 A
+        //8->10 A+
+        document.writeln(diem);
+        var diem = 7;
+        if(diem >= 4) {
+            document.writeln("<br> Bạn đã qua");
+        } else {
+            document.writeln("<br> Bạn đã rớt");
+        }
+
+
+     </script> 
+    <!--external JS -->
+    <script src="script.js"></script>
+</body>
+</html>

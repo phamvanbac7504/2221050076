@@ -204,7 +204,71 @@
             document.writeln("<br> Bạn đã rớt");
         }
 
+        //object
+        var thongTinSinhVien = {
+            hoTen: "VAN BAC",
+            tuoi: 22,
+            gioiTinh: false,
+            diaChi: {
+                thanhPho: "Bac tu liem",
+                phuong: "Đông Ngạc",
+                duong: "Lê Văn Hiến"
+            }
+        };
 
+
+        var Phim = {
+            TenPhim: "Mưa Đỏ",
+            daoDien: "Đặng Thái Huyền",
+            namSanXuat: 2025,
+            thoiLuong: 124,
+            theLoai: "Lịch sử",
+            dienVien: {
+                dienVienChinh: [
+                    "Đỗ Nhật Hoàng","Lê Hạ Anh","Steve Nguyễn"
+                ],
+                dienVienPhu: [
+                    "Đỗ Nhật Hoàng","Lê Hạ Anh","Steve Nguyễn"
+                ]
+            }
+        };
+
+        document.writeln("<br>");
+        document.writeln(Phim.dienVien.dienVienChinh[2]);
+
+        document.writeln("<br>");
+        //switch case
+        var d = new Date();
+        var theday = d.getDay();
+        switch(theday) {
+            case 5: 
+                document.write("finally Friday");
+                break;
+            case 6:
+                document.write("Super Saturday");
+                break;
+            case 0:
+                document.write(" Sleepy Sunday");
+                break;
+            default:
+                document.write("I'm Looking forward to the Weekend");
+        }
+
+        document.writeln("<br>");
+        //for
+        for(var index = 0; index < 10; index++) {
+            document.writeln("Xin chào! <br>"+ index);
+        }
+
+        var danhSachSinhVien = ["VAN BAC", "VAN ANH", "VAN HUY", "VAN HIEU", "VAN HUNG"];
+        document.writeln("<br>Xin Chào!" + danhSachSinhVien[0]);
+        for(var i = 0; i < danhSachSinhVien.length; i++) {
+            document.writeln("<br>"+ i + "<br>");
+            document.writeln("Xin chào" + danhSachSinhVien[i])
+        }
+        
+            
+        
      </script> 
     <!--external JS -->
     <script src="script.js"></script>

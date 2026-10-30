@@ -260,12 +260,29 @@
             document.writeln("Xin chào! <br>"+ index);
         }
 
-        var danhSachSinhVien = ["VAN BAC", "VAN ANH", "VAN HUY", "VAN HIEU", "VAN HUNG"];
+        var danhSachSinhVien = [" BAC", " ANH", " HUY", " HIEU", " HUNG"];
         document.writeln("<br>Xin Chào!" + danhSachSinhVien[0]);
         for(var i = 0; i < danhSachSinhVien.length; i++) {
             document.writeln("<br>"+ i + "<br>");
             document.writeln("Xin chào" + danhSachSinhVien[i])
+            if(danhSachSinhVien[i] == "ANH"){
+                document.writeln("<br>Xin Chào"+danhSachSinhVien[i]);
+            }
         }
+        //popup boxes
+        alert("xin chào!");
+
+        //confirm
+        var r = confirm("press a button")
+        if (r == true) {
+            document.write("You pressed OK!");
+        }
+        else {
+            document.write("You presss Cancel!");
+        }
+        //promt
+        r = prompt("Nhập vào họ tên","nhập tên vào đây!")
+        document.write(r);
         
             
         

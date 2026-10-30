@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ><link rel="stylesheet" href="style.css">
+    <title>Bài 10-JS</title>
+    
+</head>
+<body>
+    <main>
+        <div class="trai">
+            <!--<div class="video">
+
+            </div>-->
+           <iframe class="video" src="https://www.youtube.com/embed/wBJZ1-A9Huo?si=q6aDRy8OiTkv3Lwr" 
+           title="YouTube video player" frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+        <div class="phai">
+            <h1>Danh sách</h1>
+            <div class="danh-sach"> 
+                <div onclick="chonBai(1)" class="bai-hat">
+                    <img class="anh-bai" src="kesaytinh.jfif">
+                    <p> Kẻ Say Tình- Quốc Thiên </p>
+
+                </div>
+                 <div onclick="chonBai(2)" class="bai-hat">
+                    <img class="anh-bai" src="kesaytinh2.jfif">
+                    <p> Kẻ Say Tình 2- Quốc Thiên </p>
+
+                </div>
+                 <div onclick="chonBai(3)" class="bai-hat">
+                    <img class="anh-bai" src="kesaytinh3.jfif">
+                    <p> Kẻ Say Tình 3- Quốc Thiên </p>
+
+                </div>
+                 <div onclick="chonBai(4)" class="bai-hat">
+                    <img class="anh-bai" src="ratlauroimoikhoc.jfif">
+                    <p> Rất Lâu Rồi Mới Khóc</p>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script>
+          var danhSachBaiHat = [
+            {
+                id: 1,
+                ten: "Kẻ Say Tình",
+                duongDananh: "kesaytinh.jfif",
+                duongDanYoutube:"https://www.youtube.com/embed/l4Pkem30Q60?si=FY_aU-_Z1yhQXIFL"
+            },
+            {
+                id: 2,
+                ten: "Kẻ Say Tình 2",
+                duongDananh: "kesaytinh2.jfif",
+                duongDanYoutube:"https://www.youtube.com/embed/uUQG8sk7cLs?si=2ODAc0WNozSQj-05"
+            },
+            {
+                id: 3,
+                ten: "Kẻ Say Tình 3",
+                duongDananh : "kesaytinh3.jfif",
+                duongDanYoutube:"https://www.youtube.com/embed/-M91YDMeFnc?si=1pEeJp8XBqXcxh70"
+            },
+            {
+                id: 4,
+                ten: "Rất Lâu Rồi Mới Khóc",
+                duongDananh: "ratlauroimoikhoc.jfif",
+                duongDanYoutube:"https://www.youtube.com/embed/J0QJQ8A558U?si=t3LmkeGV_UQzDP3y"
+            },
+        ];
+        function chonBai(id){
+            for(let i = 0; i < danhSachBaiHat.length; i++){
+                if(danhSachBaiHat[i].id == id){
+                    document.getElementsByClassName("video")[0]. src = danhSachBaiHat[i].duongDanYoutube
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -31,6 +31,10 @@
     <!-- nội dung chính -->
     <main>
         <div class="banner">
+            <!--<iframe class="banner-img" src="https://www.youtube.com/embed/CPYss1DVP9U?si=AhaSWZ9bvv8Ilmqu" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
             <img class="banner-img" src="banner.jpg" alt="">
         </div>
         <div class="the-loai">
@@ -39,20 +43,20 @@
 
             </div>
             <div class="danh-sach-phim">
-                <div class="phim">
-                    <img src="sin.jpg" alt="">
+                <div onclick="chonPhim(1)" class="phim">
+                    <img class="anh-phim" src="sin.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(2)" class="phim">
                     <img src="7gau.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(3)" class="phim">
                     <img src="tacke.jpg" alt="">
                 </div>
-                <div class="phim">
-                    <img src="alu.jfif" alt="">
+                <div onclick="chonPhim(4)" class="phim">
+                    <img src="nhoctrum.jpg" alt="">
                 </div>
-                <div class="phim">
-                    <img src="bean.jfif" alt="">
+                <div onclick="chonPhim(5)" class="phim">
+                    <img src="pikachu.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -62,116 +66,23 @@
 
             </div>
             <div class="danh-sach-phim">
-                <div class="phim">
+                <div onclick="chonPhim(6)" class="phim">
                     <img src="sharkdog.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(7)" class="phim">
                     <img src="nhoctrum.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(8)" class="phim">
                     <img src="meodihia.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(9)" class="phim">
                     <img src="plankton.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(10)" class="phim">
                     <img src="pikachu.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="the-loai">
-            <div class="ten-the-loai">
-                <h3> Phim trinh thám </h3>
-
-            </div>
-            <div class="danh-sach-phim">
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="the-loai">
-            <div class="ten-the-loai">
-                <h3> Phim hài hước</h3>
-
-            </div>
-            <div class="danh-sach-phim">
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="the-loai">
-            <div class="ten-the-loai">
-                <h3> Phim hài hước</h3>
-
-            </div>
-            <div class="danh-sach-phim">
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="the-loai">
-            <div class="ten-the-loai">
-                <h3> Phim hài hước</h3>
-
-            </div>
-            <div class="danh-sach-phim">
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
-                </div>
-            </div>
-        </div>
-  
     </main>
     <!-- chân trang -->
     <footer>
@@ -198,5 +109,67 @@
             </div>
         </div>
     </footer>
+    <script>
+        var danhsachPhim = [
+            {
+                id: 1,
+                ten: "sin",
+                anhPhim : "sin.jpg"
+            },
+            {
+                id: 2,
+                ten: "7gau",
+                anhPhim : "7gau.jpg"
+            },
+            {
+                id: 3,
+                ten: "tacke",
+                anhPhim : "tacke.jpg"
+            },
+            {
+                id: 4,
+                ten: "nhoctrum",
+                anhPhim : "nhoctrum.jpg"
+            },
+            {
+                id: 5,
+                ten: "pikachu",
+                anhPhim : "pikachu.jpg"
+            },
+            {
+                id: 6,
+                ten: "sharkdog",
+                anhPhim : "sharkdog.jpg"
+            },
+            {
+                id: 7,
+                ten: "nhoctrum",
+                anhPhim : "nhoctrum.jpg"
+            },
+            {
+                id: 8,
+                ten: "meodihia",
+                anhPhim : "meodihia.jpg"
+            },
+            {
+                id: 9,
+                ten: "plankton",
+                anhPhim : "plankton.jpg"
+            },
+            {
+                id: 10,
+                ten: "pikachu",
+                anhPhim : "pikachu.jpg"
+            },
+            
+        ];
+        function chonPhim(id){
+            for(let i = 0; i < danhsachPhim.length; i++){
+                if(danhsachPhim[i].id == id){
+                    document.getElementsByClassName("banner-img")[0]. src =danhsachPhim[i].anhPhim
+                }
+            }
+        }
+    </script>
 </body>
 </html>
